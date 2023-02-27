@@ -16,7 +16,10 @@ export default {
 
 <template>
   <AppHeader />
-  <AppContents />
+  <main>
+    <AppContents />
+
+  </main>
   <AppFooter />
 </template>
 
@@ -28,6 +31,7 @@ export default {
   margin: 0;
   padding: 0;
 }
+
 
 img {
   max-width: 100%;

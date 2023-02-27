@@ -69,6 +69,7 @@ export default {
     </header>
 </template>
 
+<!-- Gestire lo style con SASS -->
 <style scoped>
 /* Debug */
 

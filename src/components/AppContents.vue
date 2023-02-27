@@ -3,7 +3,18 @@
 </script>
 
 <template>
-    <h1>CONTENT</h1>
+    <section>
+        <h1>--> Content goes Here &lt;-- </h1>
+    </section>
 </template>
 
-<style scoped></style>
+<style scoped>
+/* Debug */
+section {
+    height: 100px;
+    background-color: black;
+    color: white;
+    padding: 10px 200px;
+    ;
+}
+</style>
