@@ -20,4 +20,25 @@ export default {
   <AppFooter />
 </template>
 
-<style scoped></style>
+<style >
+/* Reset */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+</style>
