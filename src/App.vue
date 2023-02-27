@@ -32,6 +32,9 @@ export default {
   padding: 0;
 }
 
+body {
+  height: 100vh;
+}
 
 img {
   max-width: 100%;

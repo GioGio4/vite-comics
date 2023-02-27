@@ -144,7 +144,132 @@ export default {
 </script>
 
 <template>
-    <h1>FOOTER</h1>
+    <footer>
+        <!-- List link -->
+        <section class="link-container">
+
+            <div class="link-list">
+
+                <div>
+                    <h3>{{ ComicsLink.title }}</h3>
+                    <ul>
+                        <li v-for="textLink in ComicsLink.linkList">
+                            <a :href="textLink.link">{{ textLink.title }}</a>
+                        </li>
+                    </ul>
+
+                    <h3>{{ ShopLink.title }}</h3>
+                    <ul>
+                        <li v-for="textLink in ShopLink.linkList">
+                            <a :href="textLink.link">{{ textLink.title }}</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>{{ DcLink.title }}</h3>
+                    <ul>
+                        <li v-for="textLink in DcLink.linkList">
+                            <a :href="textLink.link">{{ textLink.title }}</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>{{ SitesLink.title }}</h3>
+                    <ul>
+                        <li v-for="textLink in SitesLink.linkList">
+                            <a :href="textLink.link">{{ textLink.title }}</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="logo-container">
+            </div>
+        </section>
+
+        <section class="social">
+            <div>
+
+                <button type="button">SIGN-UP NOW</button>
+            </div>
+
+            <!-- Aggiungere link social (adesso solo img) -->
+            <div class="social-link">
+                <h3>FOLLOW US</h3>
+                <img src="../assets/img/footer-facebook.png" alt="facebook">
+                <img src="../assets/img/footer-twitter.png" alt="twitter">
+                <img src="../assets/img/footer-youtube.png" alt="youtube">
+                <img src="../assets/img/footer-pinterest.png" alt="pinterest">
+                <img src="../assets/img/footer-periscope.png" alt="periscope">
+
+            </div>
+        </section>
+
+    </footer>
 </template>
 
-<style scoped></style>
+<style scoped>
+/* Debug */
+footer {
+    max-height: 100%;
+    background-image: url(../assets/img/footer-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.link-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 200px;
+}
+
+.social {
+    padding: 30px 200px;
+    background-color: rgb(49, 49, 49);
+}
+
+.link-list {
+    display: flex;
+}
+
+.link-list>div {
+    margin: 0 1rem;
+}
+
+
+h3 {
+    color: white;
+    margin: .5rem 0;
+}
+
+.logo-container {
+    width: 50%;
+    background-image: url(../assets/img/dc-logo-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+a {
+    color: grey;
+    font-size: 12px;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-link {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-link>img {
+    width: 2rem;
+    height: 2rem;
+    margin: 0 .5rem;
+}
+</style>
