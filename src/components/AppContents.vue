@@ -26,9 +26,11 @@ export default {
 /* Debug */
 
 section {
+
     background-color: #1c1c1c;
     color: white;
-    padding: 10px 200px;
+    padding: 100px 200px;
+
 
     .card-container {
         max-width: 1400px;

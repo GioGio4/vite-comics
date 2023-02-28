@@ -9,17 +9,41 @@ export default {
 
 <template>
     <div class="card">
-        <img :src="ComicInfo.thumb" alt="comic">
-        <h3>{{ ComicInfo.series }}</h3>
-        <p>{{ ComicInfo.price }}</p>
-        <p>{{ ComicInfo.type }}</p>
+        <div class="image">
+            <img :src="ComicInfo.thumb" alt="comic">
+        </div>
+        <div class="text-area">
+            <h4>{{ ComicInfo.series }}</h4>
+            <p>{{ ComicInfo.price }}</p>
+            <p>{{ ComicInfo.type }}</p>
+        </div>
     </div>
 </template>
 
 <style lang="scss"  scoped>
 .card {
-    width: calc(15% - 40px);
-    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    width: calc(15% - 30px);
+    height: 250px;
+    margin: 10px 15px;
+
+
+    .image {
+        height: 70%;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+    }
+
+    .text-area {
+        margin-top: .5rem;
+    }
+
 
 
 
