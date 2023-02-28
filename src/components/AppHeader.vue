@@ -54,7 +54,7 @@ export default {
 </script>
 
 <template>
-    <header>
+    <header class="container">
         <nav>
             <!-- Logo -->
             <!-- logo gestito come Path relativo, ma andrà usato come Path dinamico -->
@@ -73,11 +73,9 @@ export default {
 <style scoped>
 /* Debug */
 
-header {
-    padding: 10px 200px;
-}
 
 nav {
+    margin: 10px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;

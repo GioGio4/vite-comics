@@ -15,9 +15,11 @@ export default {
 <template>
     <section>
 
-        <div class="card-container">
-            <Card v-for="comic in ComicsList" :ComicInfo="comic" />
+        <div class="container">
 
+            <div class="card-container">
+                <Card v-for="comic in ComicsList" :ComicInfo="comic" />
+            </div>
         </div>
     </section>
 </template>
@@ -29,12 +31,10 @@ section {
 
     background-color: #1c1c1c;
     color: white;
-    padding: 100px 200px;
+    padding: 50px 0;
 
 
     .card-container {
-        max-width: 1400px;
-        margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
     }

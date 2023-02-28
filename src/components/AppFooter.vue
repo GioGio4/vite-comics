@@ -146,7 +146,7 @@ export default {
 <template>
     <footer>
         <!-- List link -->
-        <section class="link-container">
+        <section class="link-container container">
 
             <div class="link-list">
 
@@ -190,19 +190,22 @@ export default {
         </section>
 
         <section class="social">
-            <div>
+            <div class="container d-flex">
+                <div>
 
-                <button type="button">SIGN-UP NOW</button>
-            </div>
+                    <button class="btn-sign" type="button">SIGN-UP NOW</button>
+                </div>
 
-            <!-- Aggiungere link social (adesso solo img) -->
-            <div class="social-link">
-                <h3>FOLLOW US</h3>
-                <img src="../assets/img/footer-facebook.png" alt="facebook">
-                <img src="../assets/img/footer-twitter.png" alt="twitter">
-                <img src="../assets/img/footer-youtube.png" alt="youtube">
-                <img src="../assets/img/footer-pinterest.png" alt="pinterest">
-                <img src="../assets/img/footer-periscope.png" alt="periscope">
+                <!-- Aggiungere link social (adesso solo img) -->
+                <div class="social-link">
+                    <h3>FOLLOW US</h3>
+                    <img src="../assets/img/footer-facebook.png" alt="facebook">
+                    <img src="../assets/img/footer-twitter.png" alt="twitter">
+                    <img src="../assets/img/footer-youtube.png" alt="youtube">
+                    <img src="../assets/img/footer-pinterest.png" alt="pinterest">
+                    <img src="../assets/img/footer-periscope.png" alt="periscope">
+
+                </div>
 
             </div>
         </section>
@@ -210,7 +213,7 @@ export default {
     </footer>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 /* Debug */
 footer {
     max-height: 100%;
@@ -223,12 +226,12 @@ footer {
 .link-container {
     display: flex;
     justify-content: space-between;
-    padding: 10px 200px;
+    padding: 20px 0;
 }
 
 .social {
-    padding: 30px 200px;
     background-color: rgb(49, 49, 49);
+    padding: 20px 0;
 }
 
 .link-list {
@@ -246,7 +249,7 @@ h3 {
 }
 
 .logo-container {
-    width: 50%;
+    width: 30%;
     background-image: url(../assets/img/dc-logo-bg.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -257,19 +260,31 @@ a {
     font-size: 12px;
 }
 
-.social {
+.d-flex {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .social-link {
     display: flex;
     justify-content: space-between;
+
+    h3 {
+        color: #0282f9;
+    }
 }
 
 .social-link>img {
     width: 2rem;
     height: 2rem;
     margin: 0 .5rem;
+}
+
+.btn-sign {
+    color: white;
+    background-color: transparent;
+    border: 2px solid #0282f9;
+    padding: .7rem 1.3rem;
 }
 </style>
