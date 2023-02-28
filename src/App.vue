@@ -3,6 +3,7 @@
 import AppHeader from './components/AppHeader.vue';
 import AppContents from './components/AppContents.vue';
 import AppFooter from './components/AppFooter.vue';
+import AppJumbotron from './components/AppJumbotron.vue';
 
 export default {
 
@@ -102,13 +103,16 @@ export default {
   components: {
     AppHeader,
     AppContents,
-    AppFooter
+    AppFooter,
+    AppJumbotron
   }
 }
 </script>
 
 <template>
   <AppHeader />
+  <AppJumbotron />
+
   <main>
     <AppContents :ComicsList="comics" />
 
@@ -116,8 +120,11 @@ export default {
   <AppFooter />
 </template>
 
-<style >
-/* Reset */
+<style lang="scss" >
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
 
 * {
   box-sizing: border-box;
